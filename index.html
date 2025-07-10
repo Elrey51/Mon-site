@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonSite - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">MonSite</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#" onclick="showPage('home')">Accueil</a>
+                <a href="#" onclick="showPage('about')">À propos</a>
+                <a href="#" onclick="showPage('services')">Services</a>
+                <a href="#" onclick="showPage('contact')" class="cta-nav">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page d'accueil -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenue sur MonSite</h1>
+                <p>Découvrez nos services exceptionnels et notre expertise pour vous accompagner dans tous vos projets.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="showPage('contact')">Nous contacter</button>
+                    <button class="btn btn-secondary" onclick="showPage('about')">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Pourquoi nous choisir ?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">⚡</span>
+                        <h3>Rapidité</h3>
+                        <p>Nous travaillons efficacement pour vous livrer des résultats dans les meilleurs délais, sans compromettre la qualité.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🎯</span>
+                        <h3>Précision</h3>
+                        <p>Chaque projet est traité avec attention aux détails pour garantir des résultats qui dépassent vos attentes.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🤝</span>
+                        <h3>Support</h3>
+                        <p>Notre équipe reste à votre disposition pour vous accompagner à chaque étape de votre projet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">Prêt à commencer ?</h2>
+                <div style="text-align: center;">
+                    <p style="font-size: 1.2rem; margin-bottom: 30px; color: #666;">
+                        Contactez-nous dès maintenant pour discuter de votre projet
+                    </p>
+                    <button class="btn btn-primary" onclick="showPage('contact')" style="font-size: 18px; padding: 18px 40px;">
+                        Démarrer maintenant
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page À propos -->
+    <div id="about" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <button class="back-btn" onclick="showPage('home')">← Retour à l'accueil</button>
+                <h2 class="section-title">À propos de nous</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #666; margin-bottom: 40px;">
+                        Nous sommes une équipe passionnée dédiée à offrir des solutions innovantes et personnalisées. 
+                        Avec des années d'expérience dans notre domaine, nous nous engageons à fournir un service 
+                        de qualité supérieure à chacun de nos clients.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #666; margin-bottom: 40px;">
+                        Notre mission est de vous accompagner dans la réalisation de vos projets avec professionnalisme, 
+                        créativité et efficacité. Nous croyons en la collaboration et la communication transparente 
+                        pour atteindre des résultats exceptionnels.
+                    </p>
+                    <button class="btn btn-primary" onclick="showPage('contact')">
+                        Travaillons ensemble
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page Services -->
+    <div id="services" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <button class="back-btn" onclick="showPage('home')">← Retour à l'accueil</button>
+                <h2 class="section-title">Nos Services</h2>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">💼</span>
+                        <h3>Conseil</h3>
+                        <p>Nous analysons vos besoins et vous proposons des stratégies adaptées à vos objectifs.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🚀</span>
+                        <h3>Développement</h3>
+                        <p>Création de solutions sur mesure avec les technologies les plus récentes et performantes.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">📊</span>
+                        <h3>Analyse</h3>
+                        <p>Suivi et optimisation continue pour garantir les meilleurs résultats possibles.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🎨</span>
+                        <h3>Design</h3>
+                        <p>Interfaces modernes et intuitives pour une expérience utilisateur exceptionnelle.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🔧</span>
+                        <h3>Maintenance</h3>
+                        <p>Support technique continu et mises à jour pour assurer la pérennité de vos projets.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">📱</span>
+                        <h3>Mobile</h3>
+                        <p>Solutions adaptées à tous les appareils pour une accessibilité maximale.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page Contact -->
+    <div id="contact" class="page">
+        <div class="contact-page">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1>Contact</h1>
+                    <p>Remplissez le formulaire ci-dessous pour nous contacter</p>
+                </div>
+
+                <div class="form-container">
+                    <button class="back-btn" onclick="showPage('home')">← Retour à l'accueil</button>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nom">Nom <span class="required">*</span></label>
+                            <input type="text" id="nom" name="nom" required>
+                            <div class="error" id="nomError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="prenom">Prénom <span class="required">*</span></label>
+                            <input type="text" id="prenom" name="prenom" required>
+                            <div class="error" id="prenomError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error" id="emailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone">
+                            <div class="error" id="telephoneError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Sujet <span class="required">*</span></label>
+                            <input type="text" id="sujet" name="sujet" required>
+                            <div class="error" id="sujetError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" required placeholder="Votre message..."></textarea>
+                            <div class="error" id="messageError"></div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+
+                    <div class="actions" id="actions">
+                        <h3>Choisissez une option d'envoi</h3>
+
+                        <div class="copy-section">
+                            <button class="copy-btn" id="copyBtn">📋 Copier les données</button>
+                            <div class="preview-box" id="previewBox"></div>
+                        </div>
+
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn whatsapp" id="whatsappBtn">
+                                📱 WhatsApp
+                            </a>
+                            <a href="#" class="share-btn telegram" id="telegramBtn">
+                                ✈️ Telegram
+                            </a>
+                            <a href="#" class="share-btn email" id="emailBtn">
+                                📧 Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
